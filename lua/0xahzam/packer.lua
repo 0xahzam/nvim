@@ -68,5 +68,8 @@ return require('packer').startup(function(use)
   }
 
   use("folke/zen-mode.nvim")
+  use {'prettier/vim-prettier',
+  run = 'yarn install --frozen-lockfile --production',}
+  use("preservim/nerdtree")
 end)
 
